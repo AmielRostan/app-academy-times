@@ -1,0 +1,23 @@
+.search-modal {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+
+.search-modal__input {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  padding: .35em;
+  margin-right: 5px;
+}
+
+.search-modal__go {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  padding: .4em .8em;
+}
+
+.search-modal--hidden {
+  display: none;
+}

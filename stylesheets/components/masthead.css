@@ -1,0 +1,99 @@
+/* Your code here */
+.masthead {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "menu-search . actions"
+    ". technologies ."
+    "date logo today";
+
+}
+
+.masthead__menu-and-search {
+    align-items: center;
+    display: flex;
+    grid-area: menu-search;
+    padding-left: 20px;
+}
+
+.masthead__actions {
+    align-items: center;
+    display: flex;
+    grid-area: actions;
+    justify-content: flex-end;
+    padding: 15px 0 0 0;
+}
+
+.masthead__technologies {
+    align-items: center;
+    background-color: white;
+    border-top: 1px #e2e2e2 solid;
+    border-left: 1px #e2e2e2 solid;
+    border-right: 1px #e2e2e2 solid;
+    border-bottom: 1px white solid;
+    display: flex;
+    grid-area: technologies;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    top: 1px;
+    width: max-content;
+}
+
+.masthead__date {
+    align-items: flex-end;
+    border-bottom: 1px #e2e2e2 solid;
+    border-top: 1px #e2e2e2 solid;
+    display: flex;
+    font-size: 11px;
+    grid-area: date;
+    justify-content: flex-start;
+    padding-bottom: 11px;
+}
+
+.masthead__logo {
+    border-bottom: 1px #e2e2e2 solid;
+    border-top: 1px #e2e2e2 solid;
+    display: flex;
+    grid-area: logo;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    text-align: center;
+}
+
+.masthead__paper {
+    align-items: flex-end;
+    border-bottom: 1px #e2e2e2 solid;
+    border-top: 1px #e2e2e2 solid;
+    display: flex;
+    font-size: 11px;
+    grid-area: today;
+    justify-content: flex-end;
+    padding-bottom: 11px;
+}
+
+.masthead__paper i {
+    margin-right: 5px; /* Agregar espacio entre el icono y el texto */
+    padding-bottom: 2px;
+}
+
+.masthead__paper span {
+    align-self: flex-end; /* Alinear verticalmente el texto */
+}
+
+.menu-buttons {
+    font-size: 17px;
+    padding: 7px 9px;
+    width: 17px;
+}
+
+.menu-buttons:hover {
+    background-color: #f7f7f5;
+}
+
+.little-buttons {
+    color: #6f6f6f;
+    font-size: 10px;
+    margin: 0 3px;
+    text-transform: uppercase;
+}

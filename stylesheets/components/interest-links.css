@@ -1,0 +1,69 @@
+/* Your code here */
+.interest-links {
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 2fr 1fr 0.75fr;
+    /* grid-template-areas:
+    "dog dog-text cat cat-text plug plug-text stock climate temperature"; */
+    padding: 10px 0;
+}
+
+.interest-bar__image {
+    align-content: center;
+    justify-content: center;
+    padding: 10px 17px;
+}
+
+.interest-bar__data {
+    padding: 1em 1em 1em 0;
+    border-right: 1px #e2e2e2 solid;
+}
+
+.interest-bar__headline {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.interest-bar__story {
+    display: block;
+    font-size: 11px;
+}
+
+.interest-bar__stocks {
+    margin: 0 0 0 15px;
+    border-right: 1px #e2e2e2 solid;
+    padding-right: 15px;
+}
+
+.interest-bar__stock-price {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0.50em 5px;
+    border-bottom: 1px #e2e2e2 solid;
+}
+
+.interest-bar__price {
+    font-weight: bold;
+    color: green;
+    margin-right: 0;
+}
+
+.interest-bar__climate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.interest-bar__big-text {
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    .interest-links {
+        display: none; /* Oculta el elemento en pantallas mayores a 1200px */
+    }
+}
